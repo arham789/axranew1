@@ -1,0 +1,400 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color:#f7fafc; /* Tailwind gray-100   */
+    
+}
+
+/* Navbar Styles */
+nav {
+    background: linear-gradient(to right, #3B82F6, #2563EB); /* Tailwind gradient */
+    color: white;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50; /* Keep navbar on top */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Padding for smaller devices */
+}
+
+.navbar-menu {
+    display: flex; /* Flexbox for horizontal alignment */
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+/* Hamburger Button */
+#hamburger {
+    display: none; /* Hidden on large screens */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu on small screens */
+        flex-direction: column; /* Stack vertically */
+        background: rgba(37, 99, 235, 0.9); /* Background same as navbar */
+        position: absolute;
+        top: 60px; /* Below the navbar */
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show when active */
+    }
+
+    #hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}
+
+/* Hero Section */
+header {
+    background: url('your-image-url.jpg') no-repeat center center / cover; /* Adjust background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem; /* Responsive heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+p {
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+}
+
+/* Testimonials Section */
+#testimonial-slider {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing slides */
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1F2937; /* Tailwind gray-900 */
+    color: #A0AEC0; /* Tailwind gray-400 */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #3B82F6; /* Tailwind blue-600 */
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+#chat-box {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 9999;
+}
+
+.New:hover{
+    font-weight:2px ;
+    font-size:30px;
+    text-decoration-color: aqua;
+}
+
+.New {
+
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+@media only screen and (max-width:300px){
+    #box-1{
+        display: block;
+        background-color: cyan;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width:500px) {
+    #box-2{
+        display: block;
+        background-color: blueviolet;
+    }
+}
+
+@media   (min-width: 500px) and (max-width:800px) {
+    #box-3{
+        display: block;
+        color: black;
+        background-color: yellow;
+    }
+}
+
+@media  (min-width: 800px)  {
+    #box-4{
+        display: block;
+        background-color: green;
+    }
+}
+ .neww{
+    position : relative;
+    height : 100px;
+    top:50px;
+ }
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+ * {
+   padding: 0;
+   margin: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: "Montserrat", sans-serif;
+ }
+ 
+ nav {
+   background: #0082e6;
+   height: 80px;
+   width: 100%;
+ }
+ 
+ label.logo {
+   color: white;
+   font-size: 25px;
+   line-height: 80px;
+   padding: 0 100px;
+   font-weight: bold;
+ }
+ 
+ nav ul {
+   float: right;
+   margin-right: 20px;
+ }
+ 
+ nav ul li {
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+ 
+ nav ul li a {
+   color: white;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+ }
+ 
+ a.active,
+ a:hover {
+   background: #1b9bff;
+   transition: .5s;
+ }
+ 
+ .checkbtn {
+   font-size: 22px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 30px;
+   cursor: pointer;
+   display: none;
+ }
+ 
+ #check {
+   display: none;
+ }
+ 
+ @media (max-width: 1050px) {
+   label.logo {
+     padding-left: 30px;
+   }
+ 
+   nav ul li a {
+     font-size: 16px;
+   }
+ }
+ 
+ /* Responsive media query code for small screen */
+ @media (max-width: 890px) {
+   .checkbtn {
+     display: block;
+   }
+ 
+   label.logo {
+     font-size: 22px;
+   }
+ 
+   ul {
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #2c3e50;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+   }
+ 
+   nav ul li {
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+ 
+   nav ul li a {
+     font-size: 20px;
+   }
+ 
+   a:hover,
+   a.active {
+     background: none;
+     color: #0082e6;
+   }
+ 
+   #check:checked~ul {
+     left: 0;
+   }
+ }
+ 
+ .circle {
+  height: 18px;
+  width: 18px;
+  border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+/* Modal Styles */
+.modal {
+  display: flex; /* Use flexbox for centering */
+  position: fixed; /* Fixed position */
+  z-index: 10000; /* Ensure it's on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.modal-content {
+  background-color: white; /* Modal background */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center text */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.close {
+  color: #aaa; /* Close button color */
+  float: right; /* Position to the right */
+  font-size: 28px; /* Font size */
+  font-weight: bold; /* Bold */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Change color on hover */
+  text-decoration: none; /* No underline */
+  cursor: pointer; /* Pointer cursor */
+}
+
+button {
+  background-color: #3B82F6; /* Button color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Button padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Transition for hover */
+}
+
+button:hover {
+  background-color: #2563EB; /* Darker button on hover */
+}
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures it appears above other elements */
+}
+
+.fixed a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Set the width of the buttons */
+  height: 50px; /* Set the height of the buttons */
+}
+
+.vibrate {
+  animation: vibrate 0.5s infinite alternate;
+}
+
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  25% { transform: translate(-2px, -2px); }
+  50% { transform: translate(2px, 2px); }
+  75% { transform: translate(-2px, 2px); }
+  100% { transform: translate(2px, -2px); }
+}
+
+ 
+
+
+

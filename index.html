@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <!-- Font Awesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
+    <meta name="description" content="AXRA Tutor - Leading home tutoring services for academic excellence.">
+    <meta name="keywords" content="home tutoring, personalized education, teacher at home, home tution, tution teacher near me">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/static/images/logo.jpeg" type="image/jpeg">
+    <title>AXRA TUTORS</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Swiper CSS for testimonials slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> 
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="bg-gray-100 text-gray-800">
+
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <script src="/static/cursor.js" defer></script>
+
+<div>
+    <nav>
+        
+        <!-- Checkbox for toggling menu -->
+        <input type="checkbox" id="check">
+    
+        <!-- Menu icon -->
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+    
+        <!-- Site logo -->
+        <label class="logo">AXRA TUTORS</label>
+    
+        <!-- Navigation links -->
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-200 transition py-2">About</a></li>
+          <li><a href="#services" class="hover:text-gray-200 transition py-2">Services</a></li>
+          <li><a href="#contact" class="hover:text-gray-200 transition py-2">Contact</a></li>
+          <li><a href="#testimonials" class="hover:text-gray-200 transition py-2">testimonials</a></li>
+          <button onclick="openLoginModal()" class="text-white bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600">Login</button>
+        </ul>
+      </nav>
+    
+</div>
+ 
+    <!-- Hero Section -->
+<div>
+    <section id="hero" class="bg-gradient-to-r from-blue-400 to-blue-600 text-white h-screen flex flex-col justify-center items-center text-center">
+        <h1 class="text-5xl font-bold mb-4">Unlock Your Child's Potential with Expert Home Tutors</h1>
+        <p class="text-lg mb-8">Personalized, one-on-one tutoring to help students excel in all subjects. Start your learning journey with top-rated tutors today.</p>
+        <div class="space-x-4">
+             <!-- Book Your Tutor Button -->
+             <a href="{{ url_for('book_tuition') }}" target="_blank" class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">Book Your Tutor</a>
+        </div>
+        <div class = "neww"> <a href="{{ url_for('join_tutor') }}" target="_blank" class="bg-black text-white px-8 py-3 rounded-full hover:bg-gray-800 transition">Join as a Tutor</a>
+        </div>
+    </section>
+
+</div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-12 text-white
+            ">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+               <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 hover:-translate-y-2">
+                    <img src="https://img.freepik.com/premium-photo/beautiful-female-teacher-assisting-student-with-their-homework-desk-surrounded-by_1357756-773.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726963200&semt=ais_hybrid" alt="Personalized Tutoring" class="rounded-t-lg mb-4">  <!--"image/Personalized Tutoring.jpg"-->
+                    <h3 class="text-2xl font-semibold mb-4">Personalized Tutoring</h3>
+                    <p>One-on-one sessions tailored to meet each student’s learning needs and pace.</p>
+                </div> 
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 hover:-translate-y-2">
+                    <img src="https://img.freepik.com/premium-photo/teacher_1279548-10827.jpg?semt=ais_hybrid" alt="Qualified Tutors" class="rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4">Qualified Tutors</h3>
+                    <p>Our experienced tutors specialize in various subjects to ensure high-quality education.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 hover:-translate-y-2">
+                    <img src="/static/images/flexible.jpeg" alt="Flexible Scheduling" class="rounded-t-lg mb-4">
+                     <h3 class="text-2xl font-semibold mb-4">Flexible Scheduling</h3>
+                    <p>Choose convenient times that fit your schedule for stress-free learning.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 hover:-translate-y-2">
+                    <img src="https://media.istockphoto.com/id/534140893/vector/money-banknotes-drawing.jpg?s=612x612&w=0&k=20&c=RxyF8U64yEHF-Hacudhkgjs4YBi_6ratuGvdGDHzXRU=" alt="Affordable Packages" class="rounded-t-lg mb-4">
+                    <h3 class="text-2xl font-semibold mb-4">Affordable Packages</h3>
+                    <p>We offer competitive pricing and flexible payment plans to make education accessible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Us Section -->
+    <section id="about" class="py-4 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-12 text-white">About Us</h2>
+            <p class="text-lg mb-8 text-white">We are a team of passionate educators committed to providing high-quality, personalized home tutoring services. Our mission is to empower students to reach their full academic potential by tailoring learning experiences to their unique needs.</p>
+                <h2 class="text-4xl font-extrabold mb-12 text-white">Why Choose Us?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                        <h3 class="text-2xl font-semibold mb-4">Our Mission</h3>
+                        <p>Empowering students through tailored education that fosters academic excellence and confidence.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                        <h3 class="text-2xl font-semibold mb-4">Our Vision</h3>
+                        <p>Becoming the leading provider of personalized home tutoring, ensuring every student has the resources to succeed.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                        <h3 class="text-2xl font-semibold mb-4">Our Values</h3>
+                        <p>Fostering a supportive and inclusive learning environment that encourages growth and collaboration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Projects Section -->
+<section id="projects" class="py-4 bg-gradient-to-r from-gray-900 to-gray-700">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold mb-12 text-white">Our Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">Subject Mastery Program</h3>
+                <p>Focused tutoring sessions aimed at mastering core subjects such as Math, Science, and English.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">Exam Preparation Bootcamp</h3>
+                <p>An intensive bootcamp that helps students prepare for board exams and entrance tests.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">Skill Development Workshops</h3>
+                <p>Workshops designed to enhance skills in critical thinking, problem-solving, and communication.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+             
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-4 bg-gradient-to-r from-gray-900 to-gray-700 text-white">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold mb-12">What Our Students Say</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p class="text-lg italic">"Axra Tutor has transformed my learning experience. My grades have improved significantly!"</p>
+                    <p class="font-bold mt-4">- Sheela Yadav.</p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="text-lg italic">"The tutors are patient and really know their stuff. I highly recommend their services!"</p>
+                    <p class="font-bold mt-4">- Adnan Siddique.</p>
+                </div>
+                <div class="swiper-slide">
+                    <p class="text-lg italic">"Flexible schedules and personalized lessons have made all the difference in my studies."</p>
+                    <p class="font-bold mt-4">- Arjun singh.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+ <!-- Success Stories Section -->
+<section id="success-stories" class="py-4 bg-gradient-to-r from-gray-900 to-gray-700">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold mb-12 text-white">Success Stories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <p class="text-lg italic mb-4">"Thanks to Axra Tutors, my daughter improved her grades in just a few weeks!"</p>
+                <h3 class="text-xl font-semibold">- Anas Khan</h3>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <p class="text-lg italic mb-4">"The personalized attention helped my son regain his confidence in math."</p>
+                <h3 class="text-xl font-semibold">- Rajesh Verma</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQs Section -->
+<section id="faqs" class="py-4 bg-gradient-to-r from-gray-900 to-gray-700">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-extrabold mb-12 text-white">Frequently Asked Questions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">What is Axra Tutor?</h3>
+                <p>Axra Tutor is an online tutoring platform that connects students with qualified tutors across various subjects, providing personalized learning experiences tailored to individual needs.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">Are the tutors qualified?</h3>
+                <p>Yes, all our tutors are highly qualified and experienced in their respective subjects. We rigorously vet each tutor to ensure they have the necessary credentials and a passion for teaching.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">What payment methods do you accept?</h3>
+                <p>We accept various secure payment methods, including credit/debit cards and online wallets, ensuring a safe transaction process for all users.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-2xl hover:shadow-lg transition-transform transform hover:rotate-2 hover:scale-105">
+                <h3 class="text-2xl font-semibold mb-4">Do you offer a free trial session?</h3>
+                <p>Yes! We provide a free trial session for first-time users, allowing you to experience our tutoring services before making a financial commitment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Floating Action Buttons for Phone and WhatsApp -->
+    <div class="fixed bottom-4 right-4 space-y-4">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919984970991" target="_blank" class="flex items-center justify-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition duration-300 vibrate">
+            <i class="fab fa-whatsapp text-white text-xl"></i>
+        </a>
+        <!-- Phone Button -->
+        <a href="tel:+919984970991" class="flex items-center justify-center w-14 h-14 bg-blue-500 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 vibrate">
+            <i class="fas fa-phone-alt text-white text-xl"></i>
+        </a>
+    </div>
+
+<!-- Contact Section -->
+    <section id="contact" class="py-4 bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-12 text-white">Get In Touch</h2>
+            <p class="text-lg mb-8 text-white">Have questions? Want to book a tutor? Contact us today!</p>
+            <form action="#" method="POST" class="space-y-6">
+                <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea name="message" rows="4" placeholder="Your Message" required class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="py-4 bg-gradient-to-r from-gray-900 to-gray-700">
+    <div class="container mx-auto text-center">
+        <p>Follow us on: 
+            <a href="https://www.facebook.com/share/ydkEExoukSHtKd6Z/" aria-label="Follow us on Facebook" class="text-blue-500 hover:text-white transition mx-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/AxraTutor?t=gvu2b0OET7seXd3DR1tD2g&s=08" aria-label="Follow us on Twitter" class="text-blue-300 hover:text-white transition mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/axra_tutors/profilecard/?igsh=ZzNrd2N5dG90bGVu" aria-label="Follow us on Instagram" class="text-pink-600 hover:text-white transition mx-2"><i class="fab fa-instagram"></i></a>
+        </p>
+        <p class="text-lg italic mb-4">Created by Arham Aziz
+        </p>
+        <p>&copy; 2024 AXRA Tutor. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    // Open and close functions for 'login' modal
+function openLoginModal() {
+    document.getElementById('loginModal').classList.remove('hidden');
+}
+
+function closeLoginModal() {
+    document.getElementById('loginModal').classList.add('hidden');
+}
+
+// swipper js
+const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        effect: 'fade', // Add fade effect for a more futuristic feel
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+            delay: 2000, // Autoplay delay
+            disableOnInteraction: false,
+        },
+    });
+
+// Toggle mobile menu visibility
+document.getElementById('hamburger').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+});
+
+// Function to start the testimonial slider
+function startTestimonialSlider() {
+    const slider = document.getElementById('testimonial-slider');
+    let index = 0;
+    const slides = slider.children;
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000); // Change slide every 3 seconds
+}
+
+</script>
+</body>
+</html>
